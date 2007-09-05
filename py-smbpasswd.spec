@@ -1,6 +1,6 @@
 %define name py-smbpasswd
-%define ver 1.0
-%define rel %mkrel 3
+%define ver 1.0.1
+%define rel %mkrel 1
 
 %define have_pre %(echo %ver|awk '{p=0} /[a-z,A-Z][a-z,A-Z]/ {p=1} {print p}')
 %if %have_pre
@@ -15,7 +15,7 @@ Summary: 	NT/LM hash generation module for Python
 Name: 		%{name}
 Version: 	%{version}
 Release: 	%{release}
-Source0: 	http://barryp.org/software/%{name}/files/%{name}-%{ver}.tar.bz2
+Source0: 	http://barryp.org/software/%{name}/files/%{name}-%{ver}.tar.gz
 License:	GPL
 Group: 		Development/Python
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
