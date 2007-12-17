@@ -18,7 +18,6 @@ Release: 	%{release}
 Source0: 	http://barryp.org/software/%{name}/files/%{name}-%{ver}.tar.gz
 License:	GPL
 Group: 		Development/Python
-BuildRoot: 	%{_tmppath}/%{name}-buildroot
 Prefix: 	%{_prefix}
 Url: 		http://barryp.org/software/%{name}/
 BuildRequires:	libxine-devel python-devel
