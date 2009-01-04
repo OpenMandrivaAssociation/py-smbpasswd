@@ -1,6 +1,6 @@
-%define name py-smbpasswd
+%define name python-smbpasswd
 %define ver 1.0.1
-%define rel %mkrel 4
+%define rel %mkrel 5
 
 %define have_pre %(echo %ver|awk '{p=0} /[a-z,A-Z][a-z,A-Z]/ {p=1} {print p}')
 %if %have_pre
@@ -15,7 +15,7 @@ Summary: 	NT/LM hash generation module for Python
 Name: 		%{name}
 Version: 	%{version}
 Release: 	%{release}
-Source0: 	http://barryp.org/software/%{name}/files/%{name}-%{ver}.tar.gz
+Source0: 	http://barryp.org/software/%{name}/files/py-smbpasswd-%{ver}.tar.gz
 License:	GPL
 Group: 		Development/Python
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
@@ -24,18 +24,18 @@ Url: 		http://barryp.org/software/%{name}/
 BuildRequires:	libxine-devel python-devel
 
 %description
-This module can generate both LANMAN and NT password hashes, suitable for use 
+This module can generate both LANMAN and NT password hashes, suitable for use
 with Samba.
 
 Sample usage
-    import smbpasswd    
+    import smbpasswd
     pwd = 'mypassword'
-    print 'LANMAN hash is', smbpasswd.lmhash(pwd)               
+    print 'LANMAN hash is', smbpasswd.lmhash(pwd)
     print 'NT hash is', smbpasswd.nthash(pwd)
     print 'both hashes at once = %s:%s (lm:nt)' % smbpasswd.hash(pwd)
 
 %prep
-%setup -q -n %{name}-%ver
+%setup -q -n py-smbpasswd-%ver
 
 %build
 env CFLAGS="$RPM_OPT_FLAGS" python setup.py build
