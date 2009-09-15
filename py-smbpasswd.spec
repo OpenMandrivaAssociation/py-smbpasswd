@@ -1,6 +1,6 @@
 %define name py-smbpasswd
 %define ver 1.0.1
-%define rel %mkrel 6
+%define rel %mkrel 7
 
 %define have_pre %(echo %ver|awk '{p=0} /[a-z,A-Z][a-z,A-Z]/ {p=1} {print p}')
 %if %have_pre
