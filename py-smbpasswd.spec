@@ -50,3 +50,48 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc README.txt
 
+
+
+%changelog
+* Tue Sep 15 2009 Thierry Vignaud <tv@mandriva.org> 1.0.1-7mdv2010.0
++ Revision: 442007
+- rebuild
+
+* Tue Jan 06 2009 Funda Wang <fwang@mandriva.org> 1.0.1-6mdv2009.1
++ Revision: 325817
+- fix spec
+- rebuild
+
+  + Jérôme Soyer <saispo@mandriva.org>
+    - Rename
+
+* Fri Aug 01 2008 Thierry Vignaud <tv@mandriva.org> 1.0.1-4mdv2009.0
++ Revision: 259472
+- rebuild
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 1.0.1-3mdv2009.0
++ Revision: 247326
+- rebuild
+
+* Fri Dec 21 2007 Olivier Blin <oblin@mandriva.com> 1.0.1-1mdv2008.1
++ Revision: 136447
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Thu Sep 06 2007 Buchan Milne <bgmilne@mandriva.org> 1.0.1-1mdv2008.0
++ Revision: 80514
+- New verison 1.0.1
+
+* Thu Aug 23 2007 Thierry Vignaud <tv@mandriva.org> 1.0-3mdv2008.0
++ Revision: 69409
+- use %%mkrel
+
+
+* Sun Apr 03 2005 Michael Scherer <misc@mandrake.org> 1.0-2mdk
+- Rebuild for new python
+
+* Tue Jul 20 2004 Buchan Milne <bgmilne@linux-mandrake.com> 1.0-1mdk
+- First Mandrake package
+
