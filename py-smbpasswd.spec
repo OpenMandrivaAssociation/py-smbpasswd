@@ -19,7 +19,7 @@ Source0: 	http://barryp.org/software/%{name}/files/py-smbpasswd-%{ver}.tar.gz
 License:	GPL
 Group: 		Development/Python
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
-Url: 		http://barryp.org/software/%{name}/
+Url: 		https://barryp.org/software/%{name}/
 BuildRequires:	libxine-devel python-devel
 Provides:	python-smbpasswd = %version-%release
 
